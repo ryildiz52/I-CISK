@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" 
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
+    xmlns="http://www.opengis.net/sld" 
+    xmlns:ogc="http://www.opengis.net/ogc" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NamedLayer>
+    <Name>Points as graphics</Name>
+    <UserStyle>
+      <Title>GeoServer SLD Cook Book: Points as graphics</Title>
+      <FeatureTypeStyle>
+        <Rule>
+          <PointSymbolizer>
+            <Graphic>
+              <Mark>
+                <WellKnownName>circle</WellKnownName>
+                <Fill>
+                  <CssParameter name="fill">#FF0000</CssParameter>
+                </Fill>
+              </Mark>
+              <Size>6</Size>
+            </Graphic>
+          </PointSymbolizer>
+          <TextSymbolizer>
+            <Label>
+              <ogc:PropertyName>name</ogc:PropertyName>
+            </Label>
+            <Font>
+              <CssParameter name="font-family">Arial</CssParameter>
+              <CssParameter name="font-size">10</CssParameter>
+              <CssParameter name="font-style">normal</CssParameter>
+              <CssParameter name="font-weight">normal</CssParameter>
+            </Font>
+            <LabelPlacement>
+              <PointPlacement>
+                <AnchorPoint>
+                  <AnchorPointX>0.5</AnchorPointX>
+                  <AnchorPointY>0.0</AnchorPointY>
+                </AnchorPoint>
+                <Displacement>
+                  <DisplacementX>0</DisplacementX>
+                  <DisplacementY>5</DisplacementY>
+                </Displacement>
+              </PointPlacement>
+            </LabelPlacement>
+            <Fill>
+              <CssParameter name="fill">#000000</CssParameter>
+            </Fill>
+          </TextSymbolizer>
+        </Rule>
+        <Rule>
+          <Title>Italy</Title>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource
+                  xlink:type="simple"
+                  xlink:href="https://i.imgur.com/ZiOBfB1.png" />
+                <Format>image/png</Format>
+              </ExternalGraphic>
+              <Size>28</Size>
+            </Graphic>
+          </PointSymbolizer>
+          <Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>fid</ogc:PropertyName>
+              <ogc:Literal>1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </Filter>
+        </Rule>
+        <Rule>
+          <Title>Spain</Title>
+          <PointSymbolizer>
+            <Graphic>
+              <ExternalGraphic>
+                <OnlineResource
+                  xlink:type="simple"
+                  xlink:href="https://i.imgur.com/ZBAVEWY.png" />
+                <Format>image/png</Format>
+              </ExternalGraphic>
+              <Size>28</Size>
+            </Graphic>
+          </PointSymbolizer>
+          <Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>fid</ogc:PropertyName>
+              <ogc:Literal>2</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </Filter>
+        </Rule>
+        <Rule>
+            <Title>Netherlands</Title>
+            <PointSymbolizer>
+              <Graphic>
+                <ExternalGraphic>
+                  <OnlineResource
+                    xlink:type="simple"
+                    xlink:href="https://i.imgur.com/QkKpssQ.png" />
+                  <Format>image/png</Format>
+                </ExternalGraphic>
+                <Size>28</Size>
+              </Graphic>
+            </PointSymbolizer>
+            <Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>fid</ogc:PropertyName>
+                <ogc:Literal>3</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </Filter>
+          </Rule>
+          <Rule>
+            <Title>Greece</Title>
+            <PointSymbolizer>
+              <Graphic>
+                <ExternalGraphic>
+                  <OnlineResource
+                    xlink:type="simple"
+                    xlink:href="https://i.imgur.com/3wYSjQp.png" />
+                  <Format>image/png</Format>
+                </ExternalGraphic>
+                <Size>28</Size>
+              </Graphic>
+            </PointSymbolizer>
+            <Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>fid</ogc:PropertyName>
+                <ogc:Literal>4</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </Filter>
+          </Rule>
+          <Rule>
+            <Title>Budapest</Title>
+            <PointSymbolizer>
+              <Graphic>
+                <ExternalGraphic>
+                  <OnlineResource
+                    xlink:type="simple"
+                    xlink:href="https://i.imgur.com/mquI9uq.png" />
+                  <Format>image/png</Format>
+                </ExternalGraphic>
+                <Size>28</Size>
+              </Graphic>
+            </PointSymbolizer>
+            <Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>fid</ogc:PropertyName>
+                <ogc:Literal>5</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </Filter>
+          </Rule>
+          <Rule>
+            <Title>Georgia</Title>
+            <PointSymbolizer>
+              <Graphic>
+                <ExternalGraphic>
+                  <OnlineResource
+                    xlink:type="simple"
+                    xlink:href="https://i.imgur.com/eW9L5S8.png" />
+                  <Format>image/png</Format>
+                </ExternalGraphic>
+                <Size>28</Size>
+              </Graphic>
+            </PointSymbolizer>
+            <Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>fid</ogc:PropertyName>
+                <ogc:Literal>6</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </Filter>
+          </Rule>
+          <Rule>
+            <Title>Lesotho</Title>
+            <PointSymbolizer>
+              <Graphic>
+                <ExternalGraphic>
+                  <OnlineResource
+                    xlink:type="simple"
+                    xlink:href="https://i.imgur.com/okut8mg.png" />
+                  <Format>image/png</Format>
+                </ExternalGraphic>
+                <Size>28</Size>
+              </Graphic>
+            </PointSymbolizer>
+            <Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>fid</ogc:PropertyName>
+                <ogc:Literal>7</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </Filter>
+          </Rule>
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>
